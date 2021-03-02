@@ -10,7 +10,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter',
-      theme: ThemeData(
+      home: Scaffold(
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("lib/img/spotify.jpg")
+              fit: BoxFit.cover
+            ) //DecorationImage
+          ), //BoxDecoration
+        ), //Container
+      ); //Scaffold
+      
+    theme: ThemeData(
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
