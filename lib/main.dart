@@ -14,12 +14,12 @@ class MyApp extends StatelessWidget {
         body: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("lib/img/spotify.jpg")
+              image: AssetImage("lib/img/spotify.jpg"),
               fit: BoxFit.cover
             ) //DecorationImage
           ), //BoxDecoration
         ), //Container
-      ); //Scaffold
+      ), //Scaffold
       
     theme: ThemeData(
         // This is the theme of your application.
@@ -37,7 +37,6 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
